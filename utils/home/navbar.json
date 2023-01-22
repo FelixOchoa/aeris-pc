@@ -1,0 +1,16 @@
+{
+  "NavItems": [
+    {
+      "title": "Inicio",
+      "path": "/"
+    },
+    {
+      "title": "Qué somos",
+      "path": "/about"
+    },
+    {
+      "title": "Contacto",
+      "path": "/contact"
+    }
+  ]
+}
