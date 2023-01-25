@@ -6,9 +6,4 @@
 body {
   font-family: "Quicksand", sans-serif;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(112, 172, 242, 0.6) 100%
-  );
 }

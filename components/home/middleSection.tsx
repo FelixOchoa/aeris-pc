@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRef } from "react";
 
 export const TextSection = () => {
   return (
@@ -32,34 +33,75 @@ export const TextSection = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row justify-between items-center px-[80px] pb-[60px]">
+    </>
+  );
+};
+
+export const AboutSection = () => {
+  return (
+    <div className="bg-white flex flex-col px-[80px]">
+      <div className="w-full flex flex-col items-center mt-20">
+        <h1 className="text-[40px] font-bold leading-[60px] w-[790px] text-center">
+          Déjanos contarte sobre Aeris
+        </h1>
+        <div className="flex flex-row gap-10 mt-10 justify-center">
+          <p className="w-[700px] text-base -tracking-wide">
+            Aeris es un software de gestión académica para instituciones
+            educativas desarrollado por estudiantes y profesores. Nuestra
+            plataforma está diseñada para ayudar a las instituciones a mejorar
+            su eficiencia y eficacia en la gestión de sus procesos académicos.
+            <br />
+            <br />
+            Con Aeris, las instituciones pueden llevar a cabo tareas como
+            matrícula y registro de estudiantes, seguimiento de calificaciones,
+            gestión de tareas y exámenes, y seguimiento de asistencia, todo en
+            un solo lugar. Además, nuestra plataforma permite a los padres,
+            estudiantes y profesores comunicarse de forma segura y proporciona
+            acceso a recursos educativos adicionales.
+            <br />
+            <br />
+            Aeris es fácil de usar y se integra con aplicaciones de terceros
+            para mejorar la experiencia del usuario. Además, nuestro equipo de
+            soporte está disponible para ayudar a las instituciones a sacar el
+            máximo provecho de nuestra plataforma.
+          </p>
+          <Image
+            src="/images/about.png"
+            width={350}
+            height={350}
+            alt="About"
+            className="rounded"
+          />
+        </div>
+      </div>
+      <div className="flex flex-row justify-between items-center pt-[70px] pb-[60px] bg-white">
         <div className="flex flex-col w-[250px] items-center">
-          <h2 className="text-[32px] font-bold -tracking-[0.065em] text-[#303030]">
+          <h2 className="text-[24px] font-bold -tracking-[0.065em] text-[#303030]">
             Ten todo en orden
           </h2>
-          <p className="text-center text-[#706E6E] text-[20px] font-normal  -tracking-[0.065em]">
+          <p className="text-center text-[#706E6E] text-base font-normal -tracking-wide">
             Organiza las notas, clases y observaciones de tus clases, fácil y
             rápido
           </p>
         </div>
         <div className="flex flex-col w-[250px] items-center">
-          <h2 className="text-[32px] font-bold -tracking-[0.065em] text-[#303030] ">
+          <h2 className="text-[24px] font-bold -tracking-[0.065em] text-[#303030] ">
             Para colegios
           </h2>
-          <p className="text-center text-[#706E6E] text-[20px] font-normal  -tracking-[0.065em]">
+          <p className="text-center text-[#706E6E] text-base font-normal -tracking-wide]">
             Somos estudiantes y profesores, sabemos cuales son las necesidades
           </p>
         </div>
         <div className="flex flex-col w-[280px] items-center ">
-          <h2 className="text-[32px] font-bold -tracking-[0.065em] text-[#303030]">
+          <h2 className="text-[24px] font-bold -tracking-[0.065em] text-[#303030]">
             Céntrate en enseñar
           </h2>
-          <p className="text-center text-[#706E6E] text-[20px] font-normal  -tracking-[0.065em]">
+          <p className="text-center text-[#706E6E] text-base font-normal  -tracking-wide">
             Aeris hace todo lo demás, calificaciones, listado, observaciones,
             horarios... <strong>Todo</strong>
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

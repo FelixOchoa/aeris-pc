@@ -1,0 +1,22 @@
+{
+  "People": [
+    {
+      "name": "Felix Ochoa",
+      "job": "Ingeniero de Sistemas",
+      "quote": "La arquitectura de Aeris es muy bien pensada, lo que hace que sea fácil de escalar y mantener.",
+      "image": "/images/people-1.jpg"
+    },
+    {
+      "name": "Reinaldo Duran",
+      "job": "Estudiante",
+      "quote": "La integración de Aeris con otras herramientas de productividad ha mejorado significativamente mi experiencia como estudiante universitario.",
+      "image": "/images/people-2.jpg"
+    },
+    {
+      "name": "Luisa Perez",
+      "job": "Directora",
+      "quote": "Desde que implementamos Aeris en nuestra institución, hemos visto una mejora significativa en la eficiencia de nuestros procesos académicos.",
+      "image": "/images/people-3.jpeg"
+    }
+  ]
+}
