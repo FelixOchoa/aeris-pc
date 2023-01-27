@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { useRef } from "react";
+import { useRouter } from "next/router";
 
 export const TextSection = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className="px-[80px] flex flex-row items-center gap-[139px] min-h-screen">
@@ -16,10 +18,16 @@ export const TextSection = () => {
             </p>
           </div>
           <div className="flex flex-row gap-[39px] mt-[47px]">
-            <button className="px-10 py-2 bg-[#72ADF3]/40 text-black rounded-[16px] shadow-md font-semibold -tracking-[0.065em] text-[20px] hover:scale-110 transition-all duration-500 ease-in-out">
+            <button
+              className="px-10 py-2 bg-[#72ADF3]/40 text-black rounded-[16px] shadow-md font-semibold -tracking-[0.065em] text-[20px] hover:scale-110 transition-all duration-500 ease-in-out"
+              onClick={() => router.push("/register")}
+            >
               Registrate ahora
             </button>
-            <button className="px-12 py-2 bg-white shadow-md rounded-[16px] font-semibold text-[20px] -tracking-[0.065em] hover:scale-110 transition-all duration-500 ease-in-out">
+            <button
+              className="px-12 py-2 bg-white shadow-md rounded-[16px] font-semibold text-[20px] -tracking-[0.065em] hover:scale-110 transition-all duration-500 ease-in-out"
+              onClick={() => router.push("/login")}
+            >
               Inicia Sesión
             </button>
           </div>

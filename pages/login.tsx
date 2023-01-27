@@ -1,9 +1,7 @@
-import { RegisterForm } from "@/components/register/registerSection";
-import { AboutRegisterSection } from "@/components/register/registerSection";
-
-export default function Register() {
+import { LoginForm, AboutLoginSection } from "@/components/login/loginSection";
+export default function Login() {
   return (
-    <>
+    <div>
       <div
         style={{
           background:
@@ -12,12 +10,12 @@ export default function Register() {
         className="flex flex-col justify-center items-center h-screen"
       >
         <div className="bg-white rounded-lg shadow-md w-[900px]">
-          <div className="flex flex-row-reverse items-center justify-center p-4">
-            <RegisterForm />
-            <AboutRegisterSection />
+          <div className="flex flex-row items-center p-4 justify-around gap-7">
+            <LoginForm />
+            <AboutLoginSection />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
