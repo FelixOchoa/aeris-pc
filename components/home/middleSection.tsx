@@ -6,20 +6,31 @@ export const TextSection = () => {
 
   return (
     <>
-      <div className="px-[80px] flex flex-row items-center gap-[139px] min-h-screen">
-        <div className="flex flex-col">
-          <div className="flex flex-col">
-            <h1 className="text-[60px] font-bold leading-[60px] w-[790px]">
-              Plataforma para la gestión académica de las instituciones
-              educativas
-            </h1>
-            <p className="text-[36px] font-medium m-0">
-              Para estudiantes y profesores.
-            </p>
+      <div className="px-[40px] flex flex-row items-center gap-[139px] min-h-screen bg-slate-400 rounded-3xl bg-gradient-to-br from-sky-100 via-sky-200 to-blue-300">
+        <div className="flex flex-col w-full min-[1366px]:justify-center min-[1366px]:items-center">
+          <div className="flex flex-row w-full items-center min-[1366px]:justify-center">
+            <div className="flex flex-col">
+              <h1 className="text-[60px] font-bold leading-[70px] w-[600px] -tracking-wide">
+                Plataforma para la gestión académica de las instituciones
+                educativas
+              </h1>
+              <p className="text-xl font-medium m-0 -tracking-wide">
+                Para estudiantes y profesores.
+              </p>
+            </div>
+            <Image
+              src="/images/home-card.jpg"
+              alt="teacher"
+              width={500}
+              height={1}
+              quality={100}
+              className="rounded-full"
+            />
           </div>
-          <div className="flex flex-row gap-[39px] mt-[47px]">
+
+          <div className="flex flex-row gap-[39px] min-[1366px]:mt-10">
             <button
-              className="px-10 py-2 bg-[#72ADF3]/40 text-black rounded-[16px] shadow-md font-semibold -tracking-[0.065em] text-[20px] hover:scale-110 transition-all duration-500 ease-in-out"
+              className="px-8 py-2 bg-black text-white rounded-[16px] shadow-md font-semibold -tracking-[0.065em] text-[20px] hover:scale-110 transition-all duration-500 ease-in-out"
               onClick={() => router.push("/register")}
             >
               Registrate ahora
@@ -32,14 +43,6 @@ export const TextSection = () => {
             </button>
           </div>
         </div>
-        <div className="">
-          <Image
-            src="/images/imageMiddle.png"
-            width={305}
-            height={520}
-            alt="teacher"
-          />
-        </div>
       </div>
     </>
   );
@@ -47,7 +50,7 @@ export const TextSection = () => {
 
 export const AboutSection = () => {
   return (
-    <div className="bg-white flex flex-col px-[80px]">
+    <div className="bg-white flex flex-col px-[40px]">
       <div className="w-full flex flex-col items-center mt-20">
         <h1 className="text-[40px] font-bold leading-[60px] w-[790px] text-center">
           Déjanos contarte sobre Aeris
